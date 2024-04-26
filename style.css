@@ -3,7 +3,6 @@
     margin: 0;
     box-sizing: border-box;
     text-decoration: none !important;
-    color: black;
 }
 
 body{
@@ -13,11 +12,22 @@ body{
 }
 
 .header{
-    width: 920px;
+    width: 1280px;
+    height: 500px;
     margin-top: 20px;
     padding: 20px;
     border-radius: 20px;
     background-color: #41B06E;
+    color: white;
+    position: relative;
+}
+
+/* .navbar .container-fluid{
+    margin-top: calc(420px);
+} */
+
+.header a{
+    color: white;
 }
 
 .up-head{
@@ -26,7 +36,6 @@ body{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    color: black !important;
 }
 
 .up-right{
@@ -37,17 +46,31 @@ body{
     justify-content: space-between;
 }
 
-.header a{
+.up-head a{
     text-decoration: none;
-    color: white !important;
+    color: black;
 }
 
 .up-navbar{
+    position: fixed;
     display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    width: 1280px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: white !important;
+    z-index: 99;
+    background-color: #41B06E;
+    font-weight: 600;
+    margin-left: -20px;
+}
+
+.up-navbar i{
+    font-size: 25px;
+    color: white;
+    z-index: 99;
 }
 .navbar{
     background: none !important;
@@ -62,3 +85,97 @@ body{
 .nav-item a:hover{
     border-bottom: 1px solid white !important;
 }
+
+.banner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    padding-top: 60px;
+}
+
+.banner-img{
+    mix-blend-mode: multiply;
+}
+
+.ijtimoiy{
+    margin: 40px 20px;
+}
+
+.ijtimoiy h2{
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.cards{
+    display: flex;
+    width: 1280px;
+    justify-content: space-between;
+}
+
+.card{
+    border: none;
+    background-color: #7a676711;
+    transition: 0.3s;
+    width: 400px !important;
+    height: 250px !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 15px;
+    font-weight: 500;
+}
+
+.cards .card:hover{
+    box-shadow: 1px 2px 2px 2px rgba(128, 128, 128, 0.199);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.card img{
+    width: 150px;
+    height: 120px;
+}
+
+.card2{
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+    height: 180px !important;
+}
+
+.card2 i{
+    font-size: 40px;
+    color: green;
+}
+.karusel{
+    width: 1280px;
+}
+
+.w-100{
+    width: 300px !important;
+    height: 250px; 
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.carousel-item {
+    height: 550px;  /* Adjust as needed for your content */
+  }
+  
+.carousel-caption {
+    text-align: center;
+  }
+  
+  @media (min-width: 768px) {
+    .carousel-inner.row {
+      display: flex;
+    }
+    .carousel-item {
+      flex: 1 0 25%;  /* Set width to 25% for 4 items per row */
+    }
+  }
+  
