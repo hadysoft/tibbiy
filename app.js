@@ -10,3 +10,13 @@ window.addEventListener("scroll", function() {
       stayer.style.top = "80px";
     }
   });
+
+  // $(function () {
+  //   $('[data-toggle="popover"]').popover()
+  // })
+
+  // $(function () {
+  //   $('.btn-secondary').popover({
+  //     container: 'body'
+  //   })
+  // })
